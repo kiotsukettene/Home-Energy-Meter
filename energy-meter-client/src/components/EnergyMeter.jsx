@@ -33,7 +33,7 @@ const EnergyMeter = () => {
         <div className="bg-white shadow-lg p-6 rounded-md">
           <GaugeChart
             value={data.Irms}
-            maxValue={15}
+            maxValue={2}
             label="Irms (Ampere)"
             color="#1E88E5"
           />
@@ -53,7 +53,7 @@ const EnergyMeter = () => {
         <div className="bg-white shadow-lg p-6 rounded-md">
           <GaugeChart
             value={data.Power}
-            maxValue={5000}
+            maxValue={7}
             label="Power (Watts)"
             color="#FB8C00"
           />
