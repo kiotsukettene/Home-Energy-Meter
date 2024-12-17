@@ -19,7 +19,7 @@ const EnergyMeter = () => {
     });
   }, []);
 
-  const conversionRate = 17; // Rate per kWh for cost calculation
+  const conversionRate = 14; // Rate per kWh for cost calculation
   const cost = (data.kWh * conversionRate).toFixed(2);
 
   return (
