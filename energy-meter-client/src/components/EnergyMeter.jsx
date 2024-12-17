@@ -33,7 +33,7 @@ const EnergyMeter = () => {
         <div className="bg-white shadow-lg p-6 rounded-md">
           <GaugeChart
             value={data.Irms}
-            maxValue={0.50}
+            maxValue={2}
             label="Irms (Ampere)"
             color="#1E88E5"
           />
@@ -53,7 +53,7 @@ const EnergyMeter = () => {
         <div className="bg-white shadow-lg p-6 rounded-md">
           <GaugeChart
             value={data.Power}
-            maxValue={7}
+            maxValue={15}
             label="Power (Watts)"
             color="#FB8C00"
           />
@@ -67,7 +67,7 @@ const EnergyMeter = () => {
             label="Kilowatts (kW)"
             color="#D32F2F"
           />
-          <p className="text-center text-2xl font-bold mt-4">{data.kWh} kW</p>
+          <p className="text-center text-2xl font-bold mt-4">{data.kWh.toFixed(2)} kW</p>
         </div>
       </div>
 
